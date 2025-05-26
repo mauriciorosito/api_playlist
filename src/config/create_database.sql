@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS playlist_db;
+USE playlist_db;
+
+CREATE TABLE songs (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(100) NOT NULL,
+  artist VARCHAR(100) NOT NULL,
+  album VARCHAR(100),
+  year INT
+);
